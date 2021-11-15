@@ -1,0 +1,9 @@
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    text-shadow: 3px 3px 4px #ed1b76;
+    color: #ffd700;
+    margin: 20%;
+    background: url(../img/background2.jpeg);
+    background-size: 100% 110%;
+   } 
