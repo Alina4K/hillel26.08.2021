@@ -1,0 +1,63 @@
+body {
+	background-image: url(https://topspb.tv/media/768x432/news_covers/matritsa1.jpg);
+	background-size: cover;
+}
+
+H1 {
+color: green;
+background-color: black;
+font-size: 40pt;
+text-align: center;
+}
+
+#zv {
+	text-align: center;
+}
+#a1 { 
+text-align: center;
+	color: green;
+background-color: black;
+font-size: 20pt;
+}
+#n1{color: green}
+#n2{color: green}
+#n3{color: green}
+
+#пронас{
+	font-size: 30pt;
+	background-color: black;
+}
+#a2 { 
+	text-align: center;
+	color: green;
+font-size: 35pt
+background-image: url(https://www.meme-arsenal.com/memes/cf388687808196e4d04f55f27d34b2f1.jpg);;
+}
+#p1{text-align: center;
+	color: green;
+font-size: 20pt
+ }
+ #p2 {text-align: center;
+	color: green;
+font-size: 20pt}
+ #a3{
+ 	color: green;
+ 	font-size: 20pt;
+ }
+ #kp {
+ 	font-size: 30pt;
+ 	color: green;
+ 	text-align: center;
+ 	background-color: black;
+ }
+ #a4 {
+ 	text-align: center;
+	color: green;
+background-color: black;
+font-size: 30pt;
+ }
+#prof {color: green;}
+#prof2 {color: green;}
+#a5 {text-align: center;
+	color: green;
+font-size: 20pt}
