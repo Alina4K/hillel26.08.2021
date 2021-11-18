@@ -23,7 +23,10 @@ background-position: center;
 p {font-size: 20px;}
 
 .kartinka{
-	style="width: 50px; max-height: 50px;" 
+	 width: 350px;}
+.planka{
+	width: 350px;
+	margin-left: 750px;
 }
 .contacts-conteiner{
 	margin-left:0px;
