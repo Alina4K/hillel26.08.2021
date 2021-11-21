@@ -10,13 +10,13 @@ if (ost != 0) {
 */
 
 /*
-function drawTriangle (a,x) {
+function drawTriangle (a,x) 
+{
   for (let i = 0; i <= a; i++) {
-    for (let j = a - 1; j >= i; j--) {
-      console.log("x");}
-      }
+      console.log("x"); }
+}
  */
- 
+
 /*
  for (var i = 1; i < 100; i += 2) {
     console.log(i);
