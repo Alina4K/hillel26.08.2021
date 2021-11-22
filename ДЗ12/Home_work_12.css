@@ -1,0 +1,30 @@
+button {
+	text-decoration: none;
+	color: #fff;
+	background: #ff8448;
+	padding: 10px 20px;
+	border-radius: 4px;
+	margin: 10px;
+	display: inline-block;
+}
+button:hover {
+	color: #fff;
+	background: #ff8248;
+}
+.math {
+	margin-top:5%;
+	text-align: center;
+}
+.spruce {
+	margin-top:5%;
+	text-align: center;
+	font-size: 500%;
+}
+.odd-numbered{
+	text-align: center;
+}
+.one_hundred{
+	margin-top:5%;
+	text-align: center;
+	font-size: 500%;
+}
