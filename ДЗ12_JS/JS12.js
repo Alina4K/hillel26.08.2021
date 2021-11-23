@@ -25,10 +25,10 @@ for(let x=0; x<100; x++){
 
 
 let n=1000; i=0;
-while(n>50){
+while(n>=50){
 	n=n/2;
 	i=i+1;
-	 if (n>50){
+	 if (n>=50){
 		continue;
 	}
 	console.log('Количество итераций: '+i + ' число: ' + n);
@@ -52,11 +52,12 @@ while(n>50){
 */
 
 function drawTriangle(a,b){
+	let q=b
 	let t=0;
 	while (t<a){
 		t=t+1;
 	console.log(b)
-    b=b+b;}}
+    b=b+q;}}
 drawTriangle(7,'*');
 
 
