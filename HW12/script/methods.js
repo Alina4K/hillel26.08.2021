@@ -57,9 +57,10 @@ for (let i = 0; i <= 100; i++) {
 console.log('\n\nTask4:')
 let value = 1000
 let iterations = 0
-do {
-    value = value / 2;
-    iterations++
-} while (value > 50);
+do{
+	value = value/2;
+	iterations++
+}
+while (value >= 50);
 console.log('Iterations: ' + iterations);
 console.log('Result: ' + value);
