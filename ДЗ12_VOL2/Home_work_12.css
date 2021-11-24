@@ -1,0 +1,23 @@
+button {
+	text-decoration: none;
+	color: #fff;
+	background: #666;
+	padding: 10px 20px;
+	border-radius: 4px;
+	margin: 10px;
+	display: inline-block;
+}
+button:hover {
+	color: #fff;
+	background: #b6b6b6;
+}
+
+div {
+	text-align:  center;
+}
+
+.brd {
+    border: 4px double black;
+    background: #e4e4e4;
+    padding: 10px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Home Work 12</title>
+
+</head>
+
+<body>
+	<script src="Home_work_12_002.js"></script>
+	<link rel="stylesheet" href="Home_work_12.css">
+
+
+<div class="math brd"> 
+	    <h2>Задание № 1:</h2>
+	    <p>Даны переменные a и b. Проверьте, что a делится без остатка на b.
+Если это так - выведите 'Делится'и результат деления,
+иначе выведите 'Делится с остатком' и остаток от деления.</p>
+        <h2>Ответ:</h2>
+
+		<input class="number_1" type="number" placeholder="что делим" required=""> /
+		<input class="number_2" type="number" placeholder="на что делим" required="">
+		<br><br>
+		<button class="calculate" id="HW1" onclick="myCalculate()">расчитать</button>
+</div>
+
+
+<div class="spruce brd"> 
+	    <h2>Задание № 2:</h2>
+	    <p>
+	    	"Нарисуйте" в консоли прямоугольный треугольник из звездочек
+(или плюсиков, или какого другого символа):
+на первой строчке - одна звездочка, на второй две, и так далее.
+ Решение оформите в виде функции, куда передаются два параметра:
+ высота треугольника и символ, которым его нужно "рисовать".
+ Как-то так:
+ drawTriangle(7,*);</p><br>
+<div style="display: inline-block; text-align:left;">
+	
+*<br>
+**<br>
+***<br>
+****<br>
+...и т.д.<br><br>
+</div>
+	     <h2>Ответ:</h2>
+	     <div style="display: inline-block; text-align:left;">
+	     <p>let lines = 7;<br>
+let str = " ";<br>
+let eur = "€";<br>
+for (let i = 0; i < lines; i++) {<br>
+  str += eur;<br>
+  console.log(str);<br>
+  }
+</div>
+  <br><br>
+  </p>
+  <div style="display: inline-block; text-align:left;">
+  <p>
+  	€<br>
+    €€<br>
+    €€€<br>
+    €€€€<br>
+    €€€€€<br>
+    €€€€€€<br>
+    €€€€€€€<br><br><br>
+  </p>
+ </div>
+  <div>
+ <button id="HW2" onclick="mySpruce()">Проверяем</button>
+		</div>
+
+
+		<div class="odd-numbered brd">
+			<h2>Задание № 3:</h2>
+			<p>
+				Выведите столбец нечетных чисел в промежутке от 0 до 100.
+			</p>
+			 <h2>Ответ:</h2>
+			 <div style="display: inline-block; text-align:left;">
+			 <p>
+		1<br>
+        3<br>
+        5<br>
+        7<br>
+        *<br>
+        *<br>
+        95<br>
+        97<br>
+        99<br>
+			 </p><br><br>
+	 </div>	
+		
+<div> 
+		<button id="HW3"  onclick="myColumn()">Расчитать</button>
+</div>
+
+
+
+
+<div class="one_hundred brd"> 
+	<h2>Задание № 4:</h2>
+			<p>
+				Дано число n = 1000. Делите его на 2 столько раз, пока результат
+деления не станет меньше 50. Какое число получится?
+Посчитайте количество итераций, необходимых для этого. Вывидите количество итераций и число которое получилось.
+			</p>
+			 <h2>Ответ:</h2>
+			 <p>
+			 	Количество итераций: 5<br>
+Число которое получилось: 31.25
+			 </p>
+		<span id="result">
+			<button id="HW4"  onclick="myNumber()">Проверить</button>
+		</span>
+</div>
+
+
+</body>
+
+</html>
