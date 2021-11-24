@@ -9,13 +9,15 @@ if (ost != 0) {
 }
 */
 
-/*
-function drawTriangle (a,x) 
-{
-  for (let i = 0; i <= a; i++) {
-      console.log("x"); }
+
+
+var str = '';
+var heig = 9;
+while (heig > 0) {
+    console.log( str += '$' )
+    heig -= 1;
 }
- */
+ 
 
 /*
  for (var i = 1; i < 100; i += 2) {
@@ -26,9 +28,10 @@ function drawTriangle (a,x)
 /*
 var i = 1000
 var num = 0
-while (i > 50)
+while (i >= 50)
 { i = i / 2
 num++ }
     console.log(i)
 console.log('количество итераций', num)
 */
+
