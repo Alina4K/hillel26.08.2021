@@ -1,0 +1,11 @@
+h1 {
+  text-align: center; 
+  text-shadow: red 5px 5px 5px;
+}
+body{
+  margin:0;
+  padding:0;
+  background: url('img/background1_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

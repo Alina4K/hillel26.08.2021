@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ДЗ13</title>
+
+<link rel='stylesheet' href='homeWork13.css' type='text/css' />
+<script src="homeWork13.js"></script>
+</head>
+<body onload="document.registration.username.focus();">
+<h1>Home Work 13</h1>
+
+<form  align="center" name='registration' onSubmit="return formValidation();">
+<ul>
+<label for="username">Name:</label>
+<input type="text" name="username" size="50" placeholder="Длина 2 - 20 только английские"/><br><br>
+<label for="email">Email:</label></li>
+<input type="text" name="email" size="50" placeholder="6 -12 символов(англиские) до @ gmail.com или ukr.net" /><br><br>
+<label for="phone">Phone:</label></li>
+<input type="text" name="phone" size="50" placeholder="380 + 50|63|66|67|68|91|92|93|97| 96 + 7 цифр"/><br><br>
+<input type="submit" name="submit" value="Submit" />
+
+</ul>
+
+</form>
+</body>
+</html>
