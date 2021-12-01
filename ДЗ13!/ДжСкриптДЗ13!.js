@@ -20,7 +20,7 @@
 	
 
 	let knop = document.querySelector("#knop");
-	knop.addEventListener('mouseup', ValidOk());
+	
 function ValidOk() {
 	if (valname===true && valemail===true && valphone===true) {
 		alert("Мы услышим Вас");
