@@ -6,7 +6,7 @@
   // №1
 
         // через if
-        /*
+
         System.out.println("Введите число 1, 2 или 3: ");
         Scanner inputFigure = new Scanner(System.in);
         int i = inputFigure.nextInt();
@@ -21,11 +21,10 @@
             System.out.println("Вы выбрали число три (3)");
         }
         else {
-            System.out.println("Вы выбрали неправильное число");
+            System.out.println("Вы выбрали неверное число");
+            System.out.println ("Выбранное вами число: " + i);
         }
 
-        System.out.println (i);
-        */
 
         // через switch
         /*
@@ -36,7 +35,11 @@
             case 1 -> System.out.println("Вы выбрали число один (1)");
             case 2 -> System.out.println("Вы выбрали число два (2)");
             case 3 -> System.out.println("Вы выбрали число три (3)");
-            default -> System.out.println("Вы выбрали неправильное число");
+            default -> {
+                System.out.println("Вы выбрали неверное число");
+                System.out.println ("Выбранное вами число: " + i);
+            }
+
         }
         */
 
@@ -76,5 +79,6 @@
 
         System.out.println("Среднее арифметическое: " + result / numbers.length);
          */
+
     }
 }
