@@ -12,6 +12,7 @@ public class Domashka {
         if (i==1 || i==2){
         System.out.println(i);}
 
+        
         System.out.println("Введите число 1, 2 или 3: ");
         Scanner inputFiguree = new Scanner(System.in);
         int m = inputFiguree.nextInt();
