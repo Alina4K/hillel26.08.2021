@@ -4,14 +4,14 @@ public class Domashka {
     public static void main(String[] args) {
         /* Необходимо написать программу, где бы пользователю предлагалось ввести число на выбор:
       1, 2 или 3, а программа должна сказать, какое число ввёл пользователь: 1, 2, или 3.
-      Написать двумя способами. If и switch. */
+      Написать двумя способами. If и switch.*/
 
         System.out.println("Введите число 1, 2 или 3: ");
         Scanner inputFigure = new Scanner(System.in);
         int i = inputFigure.nextInt();
-        if (i==1 || i==2){
+        if (i==1 || i==2 || i==3){
         System.out.println(i);}
-        
+
         System.out.println("Введите число 1, 2 или 3: ");
         Scanner inputFiguree = new Scanner(System.in);
         int m = inputFiguree.nextInt();
@@ -29,9 +29,11 @@ public class Domashka {
 
         /*Необходимо вывести на экран числа от 5 до 1. На экране должно быть:
       5 4 3 2 1 */
-        /*Integer a=5;
-        System.out.println(a +" " + (a-1)+" " + (a-2)+" " + (a-3)+" " + (a-4));*/
 
+        for (int a=5; a>=1; a--){
+            System.out.print (a + " ");
+        }
+        System.out.println();
         /*Необходимо вывести на экран таблицу умножения на 3:
         3*1=3
         3*2=6
