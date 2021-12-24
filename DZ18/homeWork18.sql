@@ -24,7 +24,7 @@ CREATE TABLE users (
 	firstName varchar(20) not null,
 	lastName varchar(20) not null,
 	password varchar(15) not null,
-    email nvarchar(320) not null,
+	email nvarchar(320) not null,
 	primary key(id)
 );
 
@@ -78,23 +78,13 @@ INSERT INTO carModel VALUES
 SELECT * FROM carModel;
 
 INSERT INTO users VALUES 
-<<<<<<< HEAD
 	(100, "Вася", "Грааа.", "rsdasdasd", "olegche@gmail.com"),
 	(101, "Петя", "Раааа", "rsdasdasd123", "olegche1@gmail.com"),
 	(102, "Олег", "Урааа", "rsdasdasd123", "olegche2@gmail.com"),
     (103, "Гриша", "Ом", "rsdasdasd123", "olegche3@gmail.com"),
-	(104, "Валяг", "Ра", "rsdasdasd123", "olegche4@gmail.com"),
-    (105, "Мишаг", "Сила", "rsdasdasd123", "olegche5@gmail.com");
+	(104, "Валг", "Ра", "rsdasdasd123", "olegche4@gmail.com"),
+    (105, "Миша", "Сила", "rsdasdasd123", "olegche5@gmail.com");
 SELECT * FROM users where email like '%@%'; 
-=======
-	(100, "Вася", "Грааа.", "rsdasdasd"),
-	(101, "Петя", "Раааа", "rsdasdasd123"),
-	(102, "Олег", "Урааа", "rsdasdasd123"),
-    	(103, "Гриша", "Ом", "rsdasdasd123"),
-	(104, "Валяг", "Ра", "rsdasdasd123"),
-    	(105, "Мишаг", "Сила", "rsdasdasd123");
-SELECT * FROM users;
->>>>>>> fe3376fb97fd888a4e6ef0c0c0c1e94aba5194b2
 
 INSERT INTO cars VALUES
 	(1, 100, 199999, 599999, 4, 1),
