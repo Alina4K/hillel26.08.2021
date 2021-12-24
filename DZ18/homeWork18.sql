@@ -81,9 +81,10 @@ INSERT INTO users VALUES
 	(100, "Вася", "Грааа.", "rsdasdasd", "olegche@gmail.com"),
 	(101, "Петя", "Раааа", "rsdasdasd123", "olegche1@gmail.com"),
 	(102, "Олег", "Урааа", "rsdasdasd123", "olegche2@gmail.com"),
-    	(103, "Гриша", "Ом", "rsdasdasd123", "olegche3@gmail.com"),
+	(103, "Гриша", "Ом", "rsdasdasd123", "olegche3@gmail.com"),
 	(104, "Валг", "Ра", "rsdasdasd123", "olegche4@gmail.com"),
   	(105, "Миша", "Сила", "rsdasdasd123", "olegche5@gmail.com");
+SELECT * FROM users;
 SELECT * FROM users where email like '%@%'; 
 
 INSERT INTO cars VALUES
