@@ -13,7 +13,8 @@ CREATE TABLE carModel (
 	title enum("TT", "R8", "Q7", "A6", "A8", "3", "5", "X5", "X6", "Z3", 
 	"Fiesta", "Focus", "Fusion", "Mondeo", "Sierra", "911", "Cayenne", 
 	"Panamera", "Palio", "Ducato", "Panda", "Punto", "Scudo") not null,
-	carBrandId int(5) not null,
+	carBrandId int,
+	foreign key(carBrandId) references carBrands(id),
 	CHECK (id<=23),
 	CHECK (carBrandId<=5)
 );
@@ -23,6 +24,7 @@ CREATE TABLE users (
 	firstName varchar(20) not null,
 	lastName varchar(20) not null,
 	password varchar(15) not null,
+    email nvarchar(320) not null,
 	primary key(id)
 );
 
@@ -38,7 +40,7 @@ CREATE TABLE users (
 	foreign key(userId) references users(id),
 	foreign key(carBrandId) references carBrands(id),
 	foreign key(carModelId) references carModel(id),
-	primary key(id, userId) -- на всякий :)
+	primary key(id)
  );
 
 INSERT INTO carBrands VALUES 
@@ -76,13 +78,13 @@ INSERT INTO carModel VALUES
 SELECT * FROM carModel;
 
 INSERT INTO users VALUES 
-	(100, "Вася", "Грааа.", "rsdasdasd"),
-	(101, "Петя", "Раааа", "rsdasdasd123"),
-	(102, "Олег", "Урааа", "rsdasdasd123"),
-    (103, "Гриша", "Ом", "rsdasdasd123"),
-	(104, "Валяг", "Ра", "rsdasdasd123"),
-    (105, "Мишаг", "Сила", "rsdasdasd123");
-SELECT * FROM users;
+	(100, "Вася", "Грааа.", "rsdasdasd", "olegche@gmail.com"),
+	(101, "Петя", "Раааа", "rsdasdasd123", "olegche1@gmail.com"),
+	(102, "Олег", "Урааа", "rsdasdasd123", "olegche2@gmail.com"),
+    (103, "Гриша", "Ом", "rsdasdasd123", "olegche3@gmail.com"),
+	(104, "Валяг", "Ра", "rsdasdasd123", "olegche4@gmail.com"),
+    (105, "Мишаг", "Сила", "rsdasdasd123", "olegche5@gmail.com");
+SELECT * FROM users where email like '%@%'; 
 
 INSERT INTO cars VALUES
 	(1, 100, 199999, 599999, 4, 1),
@@ -94,10 +96,10 @@ SELECT * FROM cars;
 
 drop table carBrands, carModel, users, cars;
 
---  drop table cars
---  drop table users
---  drop table carBrands
---  drop table carModel
+--  drop table cars;
+--  drop table users;
+--  drop table carBrands;
+--  drop table carModel;
 
 
 
