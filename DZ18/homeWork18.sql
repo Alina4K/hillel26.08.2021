@@ -31,7 +31,7 @@ CREATE TABLE users (
  CREATE TABLE cars (
 	id int,
 	userId int,
-    millege int,
+   	millege int,
 	initialMileage int,
 	carModelId int,
 	carBrandId int,
@@ -78,6 +78,7 @@ INSERT INTO carModel VALUES
 SELECT * FROM carModel;
 
 INSERT INTO users VALUES 
+<<<<<<< HEAD
 	(100, "Вася", "Грааа.", "rsdasdasd", "olegche@gmail.com"),
 	(101, "Петя", "Раааа", "rsdasdasd123", "olegche1@gmail.com"),
 	(102, "Олег", "Урааа", "rsdasdasd123", "olegche2@gmail.com"),
@@ -85,13 +86,22 @@ INSERT INTO users VALUES
 	(104, "Валяг", "Ра", "rsdasdasd123", "olegche4@gmail.com"),
     (105, "Мишаг", "Сила", "rsdasdasd123", "olegche5@gmail.com");
 SELECT * FROM users where email like '%@%'; 
+=======
+	(100, "Вася", "Грааа.", "rsdasdasd"),
+	(101, "Петя", "Раааа", "rsdasdasd123"),
+	(102, "Олег", "Урааа", "rsdasdasd123"),
+    	(103, "Гриша", "Ом", "rsdasdasd123"),
+	(104, "Валяг", "Ра", "rsdasdasd123"),
+    	(105, "Мишаг", "Сила", "rsdasdasd123");
+SELECT * FROM users;
+>>>>>>> fe3376fb97fd888a4e6ef0c0c0c1e94aba5194b2
 
 INSERT INTO cars VALUES
 	(1, 100, 199999, 599999, 4, 1),
 	(2, 101, 299999, 499999, 22, 5),
 	(3, 102, 399999, 399999, 16, 4),
 	(4, 103, 499999, 299999, 7, 2),
-    (5, 104, 599999, 199999, 11, 3);
+   	(5, 104, 599999, 199999, 11, 3);
 SELECT * FROM cars;
 
 drop table carBrands, carModel, users, cars;
