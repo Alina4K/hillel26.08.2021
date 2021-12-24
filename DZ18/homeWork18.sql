@@ -29,7 +29,7 @@ CREATE TABLE users (
  CREATE TABLE cars (
 	id int,
 	userId int,
-    millege int,
+   	millege int,
 	initialMileage int,
 	carModelId int,
 	carBrandId int,
@@ -79,9 +79,9 @@ INSERT INTO users VALUES
 	(100, "Вася", "Грааа.", "rsdasdasd"),
 	(101, "Петя", "Раааа", "rsdasdasd123"),
 	(102, "Олег", "Урааа", "rsdasdasd123"),
-    (103, "Гриша", "Ом", "rsdasdasd123"),
+    	(103, "Гриша", "Ом", "rsdasdasd123"),
 	(104, "Валяг", "Ра", "rsdasdasd123"),
-    (105, "Мишаг", "Сила", "rsdasdasd123");
+    	(105, "Мишаг", "Сила", "rsdasdasd123");
 SELECT * FROM users;
 
 INSERT INTO cars VALUES
@@ -89,7 +89,7 @@ INSERT INTO cars VALUES
 	(2, 101, 299999, 499999, 22, 5),
 	(3, 102, 399999, 399999, 16, 4),
 	(4, 103, 499999, 299999, 7, 2),
-    (5, 104, 599999, 199999, 11, 3);
+   	(5, 104, 599999, 199999, 11, 3);
 SELECT * FROM cars;
 
 drop table carBrands, carModel, users, cars;
