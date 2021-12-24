@@ -28,17 +28,17 @@ CREATE TABLE users (
 
  CREATE TABLE cars (
 	id int,
-	millege int,
-	initialMileage int,
 	userId int,
-	carBrandId int,
+    millege int,
+	initialMileage int,
 	carModelId int,
+	carBrandId int,
 	CHECK (millege<=999999),
 	CHECK (initialMileage<=999999),
 	foreign key(userId) references users(id),
-	foreign key (carBrandId) references carBrands(id),
-	foreign key (carModelId) references carModel(id),
-	primary key(id, userId)
+	foreign key(carBrandId) references carBrands(id),
+	foreign key(carModelId) references carModel(id),
+	primary key(id, userId) -- на всякий :)
  );
 
 INSERT INTO carBrands VALUES 
@@ -76,15 +76,20 @@ INSERT INTO carModel VALUES
 SELECT * FROM carModel;
 
 INSERT INTO users VALUES 
-	(101, "Вася", "Грааа.", "rsdasdasd"),
-	(100, "Петя", "Раааа", "rsdasdasd123"),
-	(102, "Олег", "Урааа", "rsdasdasd123");
+	(100, "Вася", "Грааа.", "rsdasdasd"),
+	(101, "Петя", "Раааа", "rsdasdasd123"),
+	(102, "Олег", "Урааа", "rsdasdasd123"),
+    (103, "Гриша", "Ом", "rsdasdasd123"),
+	(104, "Валяг", "Ра", "rsdasdasd123"),
+    (105, "Мишаг", "Сила", "rsdasdasd123");
 SELECT * FROM users;
 
 INSERT INTO cars VALUES
-	(1, 100, 999999, 100, 1, 4),
-	(2, 1000, 999999, 101, 5, 22),
-	(3, 999999, 999999, 102, 4, 16);
+	(1, 100, 199999, 599999, 4, 1),
+	(2, 101, 299999, 499999, 22, 5),
+	(3, 102, 399999, 399999, 16, 4),
+	(4, 103, 499999, 299999, 7, 2),
+    (5, 104, 599999, 199999, 11, 3);
 SELECT * FROM cars;
 
 drop table carBrands, carModel, users, cars;
