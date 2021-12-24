@@ -1,14 +1,14 @@
 USE database_home;
  
 CREATE TABLE carBrands (
-	id int(5) not null,
+	id int(5),
 	primary key(id),
 	title enum ("Audi", "BMW", "Ford", "Porsche", "Fiat") not null,
 	CHECK (id<=5)
 );
 
 CREATE TABLE carModel (
-	id int(23) not null,
+	id int(23),
 	primary key(id),
 	title enum("TT", "R8", "Q7", "A6", "A8", "3", "5", "X5", "X6", "Z3", 
 	"Fiesta", "Focus", "Fusion", "Mondeo", "Sierra", "911", "Cayenne", 
