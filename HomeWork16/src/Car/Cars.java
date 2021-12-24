@@ -4,6 +4,7 @@ public class Cars {
     public String brand;
     public String model;
     public Integer mileage;
+    public int speed;
 
     public Cars(String brand, String model, Integer mileage) {
 

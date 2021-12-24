@@ -1,4 +1,5 @@
 import Car.Cars;
+import Car.Mini;
 import User.Users;
 
 public class Main {
@@ -7,8 +8,8 @@ public class Main {
         System.out.println(user.name);
         Cars car=new Cars("Audi","Q7",111);
         System.out.println(car.brand);
-       // Mini car1 =new Mini("Ford","Fusion",115,301);
-        //System.out.println(car.speed);
+       Mini car1 =new Mini("Ford","Fusion",115,301);
+       System.out.println(car.speed);
     }
         }
 
