@@ -2,14 +2,14 @@ USE database_home;
  
 CREATE TABLE carBrands (
 	id int(5) not null,
-	key carBrands(id),
+	primary key(id),
 	title enum ("Audi", "BMW", "Ford", "Porsche", "Fiat") not null,
 	CHECK (id<=5)
 );
 
 CREATE TABLE carModel (
 	id int(23) not null,
-	key carModel(id),
+	primary key(id),
 	title enum("TT", "R8", "Q7", "A6", "A8", "3", "5", "X5", "X6", "Z3", 
 	"Fiesta", "Focus", "Fusion", "Mondeo", "Sierra", "911", "Cayenne", 
 	"Panamera", "Palio", "Ducato", "Panda", "Punto", "Scudo") not null,
@@ -51,10 +51,28 @@ SELECT * FROM carBrands;
 
 INSERT INTO carModel VALUES 
 	(1, 'TT', 1),
-	(11, 'Fiesta', 3),
-	(19, 'Palio', 5),
+	(2, 'R8', 1),
+	(3, 'Q7', 1),
+	(4, 'A6', 1),
+	(5, 'A8', 1),
+	(6, '3', 2),
 	(7, '5', 2),
-	(16, '911', 4);
+	(8, 'X5', 2),
+	(9, 'X6', 2),
+	(10, 'Z3', 2),
+	(11, 'Fiesta', 3),
+	(12, 'Focus', 3),
+	(13, 'Fusion', 3),
+	(14, 'Mondeo', 3),
+	(15, 'Sierra', 3),
+	(16, '911', 4),
+	(17, 'Cayenne', 4),
+	(18, 'Panamera', 4),
+	(19, 'Palio', 5),
+	(20, 'Ducato', 5),
+	(21, 'Panda', 5),
+	(22, 'Punto', 5),
+	(23, 'Scudo', 5);
 SELECT * FROM carModel;
 
 INSERT INTO users VALUES 
@@ -64,8 +82,8 @@ INSERT INTO users VALUES
 SELECT * FROM users;
 
 INSERT INTO cars VALUES
-	(1, 100, 999999, 100, 3, 11),
-	(2, 1000, 999999, 101, 5, 19),
+	(1, 100, 999999, 100, 1, 4),
+	(2, 1000, 999999, 101, 5, 22),
 	(3, 999999, 999999, 102, 4, 16);
 SELECT * FROM cars;
 
