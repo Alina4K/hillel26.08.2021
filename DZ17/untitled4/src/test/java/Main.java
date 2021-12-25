@@ -48,12 +48,12 @@ public class Main {
         //Пойти в профайл и проверить что там такие же name и lastName как при регистрации//
         driver.findElement(By.linkText("Profile")).click();
         String checkMame = driver.findElement(By.cssSelector(".profile_name")).getText();
-        Assert.assertEquals("Проверка на валидность:", "Oleg Che", checkMame.toString());
+        Assert.assertEquals("Проверка на валидность:", "Oleg Che", checkMame);
         //Добавить авто (любое)//
         driver.findElement(By.linkText("Garage")).click();
         driver.findElement(By.xpath("//button[contains(text(),'Add car')]")).click();
         driver.findElement(By.id("addCarMileage")).click();
-        String randomNum = RandomStringUtils.randomNumeric(2);
+        String randomNum = RandomStringUtils.randomNumeric(2, 3);
         driver.findElement(By.id("addCarMileage")).sendKeys(randomNum);
         driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/app-add-car-modal[1]/div[3]/button[2]")).click();
         //Добавить expenses этому авто//
