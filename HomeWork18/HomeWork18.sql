@@ -85,6 +85,7 @@ insert into cars values
 	(4, 41, 42, 4, 1, 4), 
 	(5, 51, 52, 5, 1, 5),
     (6, 61, 62, 6, 2, 6);
+    (7, 71, 72, 7, 2, 7);
 select * from cars;
 drop table cars;
 
