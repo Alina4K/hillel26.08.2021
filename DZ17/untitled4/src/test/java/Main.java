@@ -1,14 +1,20 @@
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
     WebDriver driver;
+
+
 
     @Before
     public void testPreconditions() {
@@ -41,8 +47,10 @@ public class Main {
         driver.findElement(By.xpath("//button[contains(text(),'Register')]")).click();
         //Пойти в профайл и проверить что там такие же name и lastName как при регистрации//
         driver.findElement(By.linkText("Profile")).click();
-        driver.findElement(By.linkText("Garage")).click();
+        String checkMame = driver.findElement(By.cssSelector(".profile_name")).getText();
+        Assert.assertEquals("Проверка на валидность:", "Oleg Che", checkMame.toString());
         //Добавить авто (любое)//
+        driver.findElement(By.linkText("Garage")).click();
         driver.findElement(By.xpath("//button[contains(text(),'Add car')]")).click();
         driver.findElement(By.id("addCarMileage")).click();
         String randomNum = RandomStringUtils.randomNumeric(2);
