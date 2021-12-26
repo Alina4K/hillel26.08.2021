@@ -3,12 +3,9 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-
-import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
@@ -55,7 +52,7 @@ public class Main {
         driver.findElement(By.id("addCarMileage")).click();
         String randomNum = RandomStringUtils.randomNumeric(2, 3);
         driver.findElement(By.id("addCarMileage")).sendKeys(randomNum);
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/app-add-car-modal[1]/div[3]/button[2]")).click();
+        driver.findElement(By.cssSelector("button.btn-primary[type='button']")).click();
         //Добавить expenses этому авто//
         driver.findElement(By.xpath("//button[contains(text(),'Add fuel expense')]")).click();
         driver.findElement(By.id("addExpenseMileage")).click();
@@ -64,11 +61,11 @@ public class Main {
         driver.findElement(By.id("addExpenseLiters")).sendKeys(randomNum + "1");
         driver.findElement(By.id("addExpenseTotalCost")).click();
         driver.findElement(By.id("addExpenseTotalCost")).sendKeys(randomNum + "1");
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/app-add-expense-modal[1]/div[3]/button[2]")).click();
+        driver.findElement(By.cssSelector("button.btn-primary[type='button']")).click();
         //Удалить акаунт//
         driver.findElement(By.linkText("Settings")).click();
         driver.findElement(By.xpath("//button[contains(text(),'Remove my account')]")).click();
-        driver.findElement(By.xpath("//body/ngb-modal-window[1]/div[1]/div[1]/app-remove-account-modal[1]/div[3]/button[2]")).click();
+        driver.findElement(By.cssSelector("button.btn-danger[type='button']")).click();
     }
 
     @After
