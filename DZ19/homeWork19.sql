@@ -1,3 +1,4 @@
+
 USE database_home;
  
 CREATE TABLE carBrands (
