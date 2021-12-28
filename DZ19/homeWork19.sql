@@ -88,7 +88,8 @@ INSERT INTO users VALUES
 	(106, "Laam", "Pampam", "rsdasdasd123", "olegche6@gmail.com"),
 	(107, "Col", "Malam", "rsdasdasd123", "olegche7@gmail.com"),
 	(108, "Amam", "La am", "rsdasdasd123", "olegche8@gmail.com"),
-	(109, "Mala", "Brah", "rsdasdasd123", "olegche9@gmail.com");
+	(109, "Amam", "La am", "rsdasdasd123", "olegche8@gmail.com"),
+	(110, "Mala", "Brah", "rsdasdasd123", "olegche9@gmail.com");
 SELECT * FROM users;
 SELECT * FROM users where email like '%@%'; 
 
@@ -100,7 +101,8 @@ INSERT INTO cars VALUES
 	(5, 104, 699999, 199999, 11, 3),
 	(6, 105, 599999, 199999, 1, 1),
 	(7, 106, 599999, 119999, 11, 3),
-	(8, 107, 519999, 199999, 1, 1);
+	(8, 107, 599999, 219999, 1, 1),
+	(9, 108, 519999, 499999, 1, 1);
 SELECT * FROM cars;
 
 --  drop table carBrands, carModel, users, cars;
@@ -127,7 +129,7 @@ where carBrandId in ('1');
 -- №3 --
 select carBrandId as car_id, count(carModel.id) as count_models
 from carModel
-where carBrandId in ('1', '3')
+where carBrandId in ('1', '2')
 group by carBrandId;
 
 -- №4 --
