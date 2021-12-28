@@ -33,18 +33,12 @@ public void test () {
         driver.get("https://qauto.forstudy.space/");
         driver.findElement(By.xpath("//button[text()='Sign In'] ")).click();
         driver.findElement(By.xpath("//button[text()='Registration']")).click();
-        driver.findElement(By.id("signupName")).click();
         driver.findElement(By.id("signupName")).sendKeys("Svyatoslav");
-        driver.findElement(By.id("signupLastName")).click();
         driver.findElement(By.id("signupLastName")).sendKeys("Kryachev");
-        driver.findElement(By.id("signupEmail")).click();
         String generatedstring = RandomStringUtils.randomAlphabetic(8);
         String email = generatedstring + "@gmail.com";
         driver.findElement(By.id("signupEmail")).sendKeys(email);
-
-        driver.findElement(By.id("signupPassword")).click();
         driver.findElement(By.id("signupPassword")).sendKeys("Qwerty12345");
-        driver.findElement(By.id("signupRepeatPassword")).click();
         driver.findElement(By.id("signupRepeatPassword")).sendKeys("Qwerty12345");
         driver.findElement(By.xpath("//button[text()='Register']")).click();
         driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[1]/nav/div/a[1]")).click();
@@ -57,12 +51,9 @@ public void test () {
         driver.findElement(By.id("addCarMileage")).sendKeys("40");
         driver.findElement(By.xpath("//button[text()='Add']")).click();
         driver.findElement(By.xpath("//button[text()='Add fuel expense']")).click();
-        driver.findElement(By.id("addExpenseMileage")).click();
-
+        //String mileage = RandomStringUtils.randomNumeric(2,3)
         driver.findElement(By.id("addExpenseMileage")).sendKeys("45");
-        driver.findElement(By.id("addExpenseLiters")).click();
         driver.findElement(By.id("addExpenseLiters")).sendKeys("10");
-        driver.findElement(By.id("addExpenseTotalCost")).click();
         driver.findElement(By.id("addExpenseTotalCost")).sendKeys("10");;
         driver.findElement(By.xpath("//button[text()='Add']")).click();
         driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[1]/nav/div/a[2]")).click();
