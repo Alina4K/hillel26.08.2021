@@ -83,24 +83,37 @@ INSERT INTO users VALUES
 	(102, "Олег", "Урааа", "rsdasdasd123", "olegche2@gmail.com"),
 	(103, "Гриша", "Ом", "rsdasdasd123", "olegche3@gmail.com"),
 	(104, "Валг", "Ра", "rsdasdasd123", "olegche4@gmail.com"),
-  	(105, "Миша", "Сила", "rsdasdasd123", "olegche5@gmail.com");
+  	(105, "Миша", "Сила", "rsdasdasd123", "olegche5@gmail.com"),
+    (106, "Laam", "Pampam", "rsdasdasd123", "olegche6@gmail.com"),
+    (107, "Col", "Malam", "rsdasdasd123", "olegche7@gmail.com"),
+	(108, "Amam", "La am", "rsdasdasd123", "olegche8@gmail.com"),
+	(109, "Mala", "Brah", "rsdasdasd123", "olegche9@gmail.com");
 SELECT * FROM users;
 SELECT * FROM users where email like '%@%'; 
 
 INSERT INTO cars VALUES
-	(1, 100, 199999, 599999, 4, 1),
+	(1, 100, 999999, 999999, 4, 1),
 	(2, 101, 299999, 499999, 22, 5),
 	(3, 102, 399999, 399999, 16, 4),
 	(4, 103, 499999, 299999, 7, 2),
-   	(5, 104, 599999, 199999, 11, 3);
+   	(5, 104, 699999, 199999, 11, 3),
+    (6, 105, 599999, 199999, 1, 1),
+    (7, 106, 599999, 119999, 11, 3),
+	(8, 107, 519999, 199999, 1, 1);
 SELECT * FROM cars;
 
-drop table carBrands, carModel, users, cars;
+--  drop table carBrands, carModel, users, cars;
 
 --  drop table cars;
 --  drop table users;
 --  drop table carBrands;
 --  drop table carModel;
+
+
+
+-------------------------
+
+
 
 
 
