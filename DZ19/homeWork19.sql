@@ -89,7 +89,7 @@ INSERT INTO users VALUES
 	(107, "Col", "Malam", "rsdasdasd123", "olegche7@gmail.com"),
 	(108, "Amam", "La am", "rsdasdasd123", "olegche8@gmail.com"),
 	(109, "Lil", "La am", "rsdasdasd123", "olegche9@gmail.com"),
-    (110, "Mamma", "La am", "rsdasdasd123", "olegche10@gmail.com"),
+	(110, "Mamma", "La am", "rsdasdasd123", "olegche10@gmail.com"),
 	(111, "Mala", "Brah", "rsdasdasd123", "olegche11@gmail.com");
 SELECT * FROM users;
 SELECT * FROM users where email like '%@%'; 
@@ -103,8 +103,8 @@ INSERT INTO cars VALUES
 	(6, 105, 599999, 199999, 1, 1),
 	(7, 106, 599999, 119999, 11, 3),
 	(8, 107, 599999, 219999, 1, 1),
-    (9, 108, 499999, 299999, 7, 2),
-	(10, 109, 519999, 499999, 1, 1);
+	(9, 108, 499999, 299999, 7, 2),
+	(10, 111, 519999, 499999, 1, 1);
 SELECT * FROM cars;
 
 --  drop table carBrands, carModel, users, cars;
