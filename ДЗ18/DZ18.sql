@@ -53,17 +53,38 @@ select * from car_models;
 
 
 CREATE TABLE IF NOT EXISTS users (
-	Id_users int,
-    primary key (Id_users),
-	firstName varchar(11) not null,
-	lastName varchar(11) not null,
-    email varchar(11) not null,
-    password varchar(11) not null
+	Id_users  MEDIUMINT NOT NULL AUTO_INCREMENT,
+	firstName varchar(64) not null,
+	lastName varchar(64) not null,
+    email varchar(64) not null,
+    password varchar(64) not null,
+		primary key (Id_users)
 );
-INSERT IGNORE INTO users values
-	(01, "Yuri", "Linsky1", "Linsky1@gmail.com", "qwerty123"),
-	(02, "Yuri", "Linsky2", "Linsky2@gmail.com", "qwerty123"),
-	(03, "Yuri", "Linsky3", "Linsky3@gmail.com", "qwerty123"),
-	(04, "Yuri", "Linsky4", "Linsky4@gmail.com", "qwerty123"), 
-	(05, "Yuri", "Linsky5", "Linsky5@gmail.com", "qwerty123");
+INSERT INTO users  (firstName, lastName, email, password) values
+
+	("Yuri", "Linsky1", "Linsky1@gmail.com", "qwerty123"),
+	("Yuri", "Linsky2", "Linsky2@gmail.com", "qwerty123"),
+	("Yuri", "Linsky3", "Linsky3@gmail.com", "qwerty123"),
+	("Yuri", "Linsky4", "Linsky4@gmail.com", "qwerty123"), 
+	("Yuri", "Linsky5", "Linsky5@gmail.com", "qwerty123");
 select * from users;
+
+
+
+CREATE TABLE IF NOT EXISTS cars (
+	id  MEDIUMINT NOT NULL AUTO_INCREMENT,
+	userId int NOT NULL,
+	carBrandId int NOT NULL,
+	carModelId int NOT NULL,
+	millege int NOT NULL,
+	initialMillage int NOT NULL,
+		primary key (id)
+);
+INSERT INTO cars  (userId,carBrandId,carModelId,millege,initialMillage) values
+
+	(1, 5, 16, 333, 33),
+	(2, 4, 17, 444, 44),
+	(3, 3, 18, 555, 55),
+	(4, 2, 9, 666, 66), 
+	(5, 1, 11, 777, 77);
+select * from cars;
